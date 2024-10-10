@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    transform: scale(5);
+    background-color: black;
+}
+.pai{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.c-loader{
+    animation: is-rotating 1s infinite ;
+    border: solid 2px black;
+    border-top-color:red ;
+    border-radius: 50%;
+    padding: 2px;
+    margin-top: 80px;
+    width: 10px;
+    height: 10px;
+}
+@keyframes is-rotating {
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+.FOTO{
+    width: 60px;
+    height: 60px;
+    border-radius: 3%;
+}
+
+.FOTO{
+    position: absolute;
+    animation: moverParacentro 0.4s linear forwards; 
+}
+
+@keyframes moverParacentro {
+    from {
+        left: 0; /* Início à esquerda */
+    }
+    to {
+        left: 50%; /* Fim à direita */
+        transform: translateX(-50%); 
+    }
+}
